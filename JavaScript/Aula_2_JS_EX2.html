@@ -1,0 +1,65 @@
+<html>
+  <script>
+    class Caneta{
+      constructor(cor, tampa){
+      this.cor = cor
+      this.tampa = tampa
+      }
+    
+      escrever(){
+        if (this.tampa === "Tampada") {
+            return console.log("A caneta está tampada")
+        }
+
+        // da uma olhada sobre os template strings
+        return console.log(`Escrevendo com tinta ${this.cor}`)
+      }
+
+      destampar(){
+        if(this.tampa === "Tampada"){
+        return console.log("Destampando a caneta")
+        }
+
+        return console.log('Caneta destampada e pronta para escrever')
+      }
+
+      tampar(){
+        if(this.tampa === "Destampada"){
+          return console.log("Tampadando Caneta")
+        }
+        return console.log("Caneta Tampada")
+      }
+    }    
+    const CanetaAzul = new Caneta("Azul", "Tampada") 
+    console.log(CanetaAzul)
+
+    CanetaAzul.escrever()
+    CanetaAzul.destampar()
+    CanetaAzul.tampa = "Destampada"
+    CanetaAzul.destampar()
+    CanetaAzul.escrever()
+    CanetaAzul.tampar()
+    CanetaAzul.tampa = "Tampada"
+    CanetaAzul.tampar()
+
+    
+  </script>
+
+</html>   
+
+    /*let i = 0
+
+    do{
+      i++
+      if(i === 1){
+        CanetaAzul.escrever()
+      }
+      else if(i === 2){
+      CanetaAzul.destampar()
+      }
+      else if(i === 3){
+      CanetaAzul.tampar()
+      }
+      
+    }while(i<3)*/
+

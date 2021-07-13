@@ -1,0 +1,33 @@
+<html>
+  <script>
+
+    const numeros = [4, 26, 1, 9, 37, 5, 3, 230, 6, 7, 2, 8, 90]
+    console.log("Numeros: ", numeros)
+
+    const numerosCrescente = numeros
+    numerosCrescente.sort(function(a, b){
+      return a - b
+    })
+    console.log("Numeros na Ordem Crescente: ", numerosCrescente)
+
+    const numerosDecrescente = numeros
+    numerosDecrescente.sort(function(a, b){
+      return b - a
+    })
+    console.log("Numero na Ordem Decrecente:", numerosDecrescente)
+
+    /*numeros.sort(function(a,b){
+      return a-b
+    })
+    console.log(numerosCrescente)*/
+
+   // const numerosDecrescente = "Seu código"
+   // console.log(numerosDecrescente)
+
+    // output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 26, 37, 90, 230]
+    // output: [230, 90, 37, 26, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+
+  </script>
+
+</html>
